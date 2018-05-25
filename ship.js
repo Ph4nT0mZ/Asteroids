@@ -17,8 +17,8 @@ function Ship() { //ship object
 
     if (this.isDestroyed) { //if the ship is destroyed
       for (var i = 0; i < this.brokenParts.length; i++) {
-        this.brokenParts[i].pos.add(this.brokenParts[i].vel);
-        this.brokenParts[i].heading += this.brokenParts[i].rot;
+        this.brokenParts[i].pos.add(this.brokenParts[i].vel); //move the broken parts
+        this.brokenParts[i].heading += this.brokenParts[i].rot; //rotate the broken parts
       }
     } else {
       if (this.isBoosting) { //boosting

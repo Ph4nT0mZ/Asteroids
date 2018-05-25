@@ -47,7 +47,7 @@ function Asteroid(pos, r) {
   this.brakeup = function() { // adding 2 arrays to the asteroids array (spawning 2 asteroids)
     var newA = [];
 
-    newA[0] = new Asteroid(this.pos, this.s);
+    newA[0] = new Asteroid(this.pos, this.s); //adding the 2 asteroids to the array with pos and scale detectors
     newA[1] = new Asteroid(this.pos, this.s);
 
     return newA;

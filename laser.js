@@ -1,6 +1,6 @@
 var colors = [[248, 12, 18], [238, 17, 0], [255, 51, 17], [255, 68, 34], [255, 102, 68], [255, 153, 51], [254, 174, 45], [204, 187, 51],
 [208, 195, 16], [170, 204, 34], [105, 208, 37], [34, 204, 170], [18, 189, 185], [17, 170, 187], [68, 68, 221], [51, 17, 187], [59, 12, 189],
-[68, 34, 153]];
+[68, 34, 153]]; //color array
 
 function Laser(spos, angle) {
   this.pos = createVector(spos.x, spos.y); //laser vector position
@@ -22,7 +22,7 @@ function Laser(spos, angle) {
   }
 
   this.hits = function(asteroid) { //collision function
-    var d = dist(this.pos.x, this.pos.y, asteroid.pos.x, asteroid.pos.y);
+    var d = dist(this.pos.x, this.pos.y, asteroid.pos.x, asteroid.pos.y); //calc distance between laser and asteroid
     if (d < asteroid.s) {
       return true;
     } else {

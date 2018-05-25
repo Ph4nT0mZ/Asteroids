@@ -26,13 +26,13 @@ function keyPressed() { //detecting keyboard
   if (key === " " && canPlay) {
     lasers.push(new Laser(ship.pos, ship.heading)); //spawning a new laser
   }
-  if (keyCode === RIGHT_ARROW && canPlay) {
+  if (keyCode === RIGHT_ARROW && canPlay) { //rotating right
     ship.setRotation(0.075);
   }
-  if (keyCode === LEFT_ARROW && canPlay) {
+  if (keyCode === LEFT_ARROW && canPlay) { //rotating left
     ship.setRotation(-0.075);
   }
-  if (keyCode === UP_ARROW && canPlay) {
+  if (keyCode === UP_ARROW && canPlay) { //accelerating
     ship.boosting(true);
   }
 }
